@@ -1,0 +1,141 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+
+}
+
+.headline {
+    justify-content: center;
+    text-align: center;
+}
+
+.headline h1 {
+    font-weight: bold;
+}
+
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 3px gray;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(-10deg);
+    box-shadow: 10px 10px 3px rgb(74, 74, 136);
+}
+
+
+
+.content {
+    background-color: rgb(219, 216, 216);
+    border-radius: 25px;
+    width: 50rem;
+    height: 40rem;
+    justify-self: center;
+    margin: 10rem;
+    justify-content: center;
+}
+
+.information-container {
+    padding-top: 3rem;
+}
+
+.list {
+    list-style: none;
+    margin: 1rem;
+    margin-top: 3rem;
+    padding: 0;
+    visibility: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.list-element {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(99, 115, 163, 0.2);
+    border-left: 5px solid rgb(42, 46, 165);
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: default;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.list-element:hover {
+    transform: translateX(5px);
+    background-color: rgba(99, 115, 163, 0.4);
+}
+
+.pill {
+    padding: 0.2rem 0.5rem;
+    background-color: rgb(99, 115, 163);
+    border-radius: 25px;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    border: 2px solid rgb(42, 46, 165);
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.section-fav {
+    display: none;
+}
+
+.section-fav.show {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1; 
+    min-width: 200px; 
+}
+
+.footer h4 {
+    text-align: center;
+}
+
+.start-text{
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.end-text{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}

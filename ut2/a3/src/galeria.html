@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nabil Leon Alvarez @nalleon" />
+    <title>Galería</title>
+    <link
+      rel="preload"
+      href="./resources/img/bg-mobile.jpg"
+      as="image"
+      media="(max-width: 480px)"
+    />
+    <link
+      rel="prefetch"
+      href="./resources/img/bg-default.jpg"
+      as="image"
+      media="(min-width: 1025px)"
+    />
+  </head>
+  <body>
+    <picture>
+      <source media="(width <= 480px)" srcset="./resources/img/bg-mobile.jpg" alt="Imagen de fondo hasta los 480px de ancho"/>
+      <source media="(width <= 768px)" srcset="./resources/img/bg-tablet.jpg" alt="Imagen de fondo para entre 481-768px"/>
+      <source
+        media="(width <= 1024px)"
+        srcset="./resources/img/bg-smdesktop.jpg"
+        alt="Imagen de fondo para entre 769-1024px de ancho"
+      />
+      <img
+        src="./resources/img/bg-default.jpg"
+        alt="Imagen de fondo para más de 1025px de ancho"
+        style="width: auto"
+      />
+    </picture>
+  </body>
+</html>

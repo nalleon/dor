@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(190, 168, 128);
+}
+
+.attribution-default {
+  visibility: visible;
+}
+
+.attribution-logo {
+  visibility: visible;
+}
+
+.attr-container {
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+  font-size: small;
+  margin-left: 1rem;
+  width: fit-content;
+}
+
+.attribution-mobile {
+  display: none;
+}
+.attribution-tablet {
+  display: none;
+}
+.attribution-smdesktop {
+  display: none;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  background-color: beige;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: rgb(190, 128, 128);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: rgb(134, 128, 190);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: rgb(190, 128, 169);
+  }
+}

@@ -1,0 +1,19 @@
+  .heart {
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+
+  .heart .pulse {
+    transform-origin: 50% 50%;
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%   { transform: scale(1); }
+    20%  { transform: scale(1.12); } 
+    40%  { transform: scale(0.98); }
+    60%  { transform: scale(1.06); } 
+    100% { transform: scale(1); }
+  }
+

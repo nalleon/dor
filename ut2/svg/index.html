@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOR</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="Nabil L. A.">
+</head>
+
+<body>
+    <svg width="600" height="220" viewBox="0 0 240 120" aria-label="Fly    ">
+        <g transform="translate(25,60) rotate(-170)">
+            <clipPath id="leftWing">
+                <rect x="-50" y="0" width="100" height="50" />
+            </clipPath>
+
+            <circle cx="0" cy="0" r="50" fill="#d9d9d9" clip-path="url(#leftWing)" />
+        </g>
+
+        <g transform="translate(215,60) rotate(170)">
+            <clipPath id="rightWing">
+                <rect x="-50" y="0" width="100" height="50" />
+            </clipPath>
+
+            <circle cx="0" cy="0" r="50" fill="#d9d9d9" clip-path="url(#rightWing)" />
+        </g>
+
+
+        <circle cx="120" cy="60" r="44" fill="#000" />
+
+        <g transform="translate(0 0)">
+            <circle cx="95" cy="63" r="24" fill="#fff" />
+            <circle cx="145" cy="63" r="24" fill="#fff" />
+
+            <circle cx="95" cy="72" r="4" fill="#111" />
+            <circle cx="145" cy="72" r="4" fill="#111" />
+
+        </g>
+    </svg>
+
+
+    <svg class="heart" viewBox="-5 -5 42 39" aria-label="Heart beating">
+        <g class="pulse">
+            <path d="M23.6,0
+             C20.4,0 18,2.8 16,5.4
+             C14,2.8 11.6,0 8.4,0
+             C3.6,0 0,3.8 0,8.6
+             C0,17.1 9.6,21.8 16,28
+             C22.4,21.8 32,17.1 32,8.6
+             C32,3.8 28.4,0 23.6,0 Z" fill="#b33030" stroke="#8b1f1f" stroke-width="0.6" />
+        </g>
+    </svg>
+
+</body>
+
+</html>

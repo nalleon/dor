@@ -1,5 +1,7 @@
 body {
   background-image: url("../resources/img/bg-default.jpg");
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .attribution-default {
@@ -13,7 +15,6 @@ body {
 .attr-container {
   display: flex;
   flex-direction: row;
-  background-color: beige;
   font-size: small;
   margin-left: 1rem;
   width: fit-content;
@@ -35,7 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20%;
-  background-color: beige;
+  background-color: rgb(169, 181, 204);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -76,3 +77,16 @@ body {
     display: none;
   }
 }
+
+.header {
+  display: flex;
+  background-color: #d8d8d8;
+}
+
+.navlink{
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+

@@ -5,23 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nabil Leon Alvarez @nalleon" />
     <title>Galería</title>
-    <link
-      rel="preload"
-      href="./resources/img/bg-mobile.jpg"
-      as="image"
-      media="(max-width: 480px)"
-    />
-    <link
-      rel="prefetch"
-      href="./resources/img/bg-default.jpg"
-      as="image"
-      media="(min-width: 1025px)"
-    />
+    <link rel="stylesheet" href="./styles/galeria.css" />
+
+    <link rel="preload" href="./resources/img/bg-mobile.jpg" as="image" />
+    <link rel="prefetch" href="./resources/img/bg-tablet.jpg" as="image" />
   </head>
   <body>
+    <div class="header">
+      <div class="logo-container">
+        <img
+          alt="logo"
+          src="./resources/img/logo.jpg"
+          width="70rem"
+          height="70rem"
+          style="float: left"
+        />
+        <div class="attr-container">
+          <p class="attribution-logo">
+            "<a
+              rel="noopener noreferrer"
+              href="https://www.flickr.com/photos/61927333@N00/5314523281"
+              >Retro Corporate Logo Goodness_00017</a
+            >" by
+            <a
+              rel="noopener noreferrer"
+              href="https://www.flickr.com/photos/61927333@N00"
+              >jordan_lloyd</a
+            >
+            is licensed under
+            <a
+              rel="noopener noreferrer"
+              href="https://creativecommons.org/licenses/by/2.0/?ref=openverse"
+              >CC BY 2.0
+              <img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+                style="
+                  height: 1em;
+                  margin-right: 0.125em;
+                  display: inline;
+                " /><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                style="
+                  height: 1em;
+                  margin-right: 0.125em;
+                  display: inline;
+                " /></a
+            >.
+          </p>
+        </div>
+      </div>
+      <p class="navlink"><a href="./index.html"> Inicio</a></p>
+      <p class="navlink"><a href="./contacto.html"> Contacto</a></p>
+      <p class="navlink"><a href="./galeria.html"> Galería</a></p>
+    </div>
     <picture>
-      <source media="(width <= 480px)" srcset="./resources/img/bg-mobile.jpg" alt="Imagen de fondo hasta los 480px de ancho"/>
-      <source media="(width <= 768px)" srcset="./resources/img/bg-tablet.jpg" alt="Imagen de fondo para entre 481-768px"/>
+      <source
+        media="(width <= 480px)"
+        srcset="./resources/img/bg-mobile.jpg"
+        alt="Imagen de fondo hasta los 480px de ancho"
+      />
+      <source
+        media="(width <= 768px)"
+        srcset="./resources/img/bg-tablet.jpg"
+        alt="Imagen de fondo para entre 481-768px"
+      />
       <source
         media="(width <= 1024px)"
         srcset="./resources/img/bg-smdesktop.jpg"
@@ -31,7 +78,12 @@
         src="./resources/img/bg-default.jpg"
         alt="Imagen de fondo para más de 1025px de ancho"
         style="width: auto"
+        usemap="#defaultmap"
       />
+      <map name="defaultmap">
+        <area shape="default" alt="Cielo" href="cielo.html" />
+      </map>
     </picture>
+    <script src="./js/miniatura.js"></script>
   </body>
 </html>

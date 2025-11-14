@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(190, 168, 128);
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.attribution-default {
+  visibility: visible;
+}
+
+.attribution-logo {
+  visibility: visible;
+}
+
+.attr-container {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  margin-left: 1rem;
+  width: fit-content;
+}
+
+.attribution-mobile {
+  display: none;
+}
+.attribution-tablet {
+  display: none;
+}
+.attribution-smdesktop {
+  display: none;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.header {
+  display: flex;
+  background-color: #d8d8d8;
+}
+
+.navlink {
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+button {
+  background-color: #1e3a8a;
+  color: #ffff;
+  border: none;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover{
+  background-color: #2563eb;
+}
+
+button:active{
+  background-color: rgb(115, 194, 190);
+}
+
+input[type=range]{
+  vertical-align: middle;
+}

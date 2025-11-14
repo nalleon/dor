@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parchís</title>
+  <meta name="author" content="Nabil L.A.">
+</head>
+
+<body>
+  <!-- Base del tablero -->
+  <svg width="750" height="750" style="border: solid 2px black;">
+
+    <!-- Definicion del cuadro -->
+    <symbol id="base">
+      <rect width="300" height="300" />
+      <circle fill="white" r="20" cx="100" cy="100" stroke="black" />
+      <circle fill="white" r="20" cx="100" cy="200" stroke="black"/>
+      <circle fill="white" r="20" cx="200" cy="100" stroke="black"/>
+      <circle fill="white" r="20" cx="200" cy="200" stroke="black"/>
+    </symbol>
+
+    <!-- Definicon del grid del tablero -->
+    <symbol id="grid">
+      <line x1="50" y1="0" x2="50" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="100" y1="0" x2="100" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="150" y1="0" x2="150" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="200" y1="0" x2="200" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="250" y1="0" x2="250" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="300" y1="0" x2="300" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="350" y1="0" x2="350" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="400" y1="0" x2="400" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="450" y1="0" x2="450" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="500" y1="0" x2="500" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="550" y1="0" x2="550" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="600" y1="0" x2="600" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="650" y1="0" x2="650" y2="750" stroke="gray" stroke-width="2" />
+      <line x1="700" y1="0" x2="700" y2="750" stroke="gray" stroke-width="2" />
+    </symbol>
+
+    <!-- Definicion de las calles -->
+    <symbol id="calle">
+      <rect width="50" height="300" />
+    </symbol>
+
+    <!-- Cuadros de colores -->
+    <use xlink:href="#base" x="0" y="0" fill="yellow" />
+    <use xlink:href="#base" x="450" y="0" fill="lightblue" />
+    <use xlink:href="#base" x="0" y="450" fill="green" />
+    <use xlink:href="#base" x="450" y="450" fill="red" />
+
+    
+    <!-- Calles de colores -->
+    <use xlink:href="#calle" x="350" y="0" fill="yellow" />
+    <use xlink:href="#calle" x="350" y="0" fill="lightblue" transform="rotate(90 375 375)" />
+    <use xlink:href="#calle" x="350" y="450" fill="red" />
+    <use xlink:href="#calle" x="350" y="450" fill="green" transform="rotate(90 375 375)" />
+    
+    <!-- Grid del tablero  -->
+    <use xlink:href="#grid" x="0" y="0" />
+    <use xlink:href="#grid" x="0" y="0" transform="rotate(90 375 375)" />
+
+    <!-- Rombo -->
+    <rect width="105" height="105" fill="none" stroke="black" x="300" y="300" stroke-width="2px"
+      transform="rotate(45 335 390)" />
+
+  </svg>
+
+</body>
+
+</html>

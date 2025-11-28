@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nabil L. A.">
+    <meta name="author" content="Nabil L. A." />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <h1>Mini Spotify</h1>
-    <div class="item item-1">
+    <div
+      class="item item-1"
+      data-title="Triumph"
+      data-artist="Masayoshi Soken"
+      data-cover="assets/images/cover1.png"
+    >
       <div class="cover cv1"></div>
       <div class="vinyl">
         <div class="disc">
@@ -18,7 +23,12 @@
       </div>
     </div>
     <br />
-    <div class="item item-2">
+    <div
+      class="item item-2"
+      data-title="Insiatable"
+      data-artist="Masayoshi Soken"
+      data-cover="assets/images/cover2.png"
+    >
       <div class="cover cv2"></div>
       <div class="vinyl">
         <div class="disc">
@@ -27,7 +37,12 @@
       </div>
     </div>
     <br />
-    <div class="item item-3">
+    <div
+      class="item item-3"
+      data-title="Pathmaker"
+      data-artist="Masayoshi Soken"
+      data-cover="assets/images/cover3.png"
+    >
       <div class="cover cv3"></div>
       <div class="vinyl">
         <div class="disc">
@@ -36,6 +51,29 @@
       </div>
     </div>
     <br />
+    <footer class="player-bar" role="region" aria-label="Player">
+      <div class="player-info">
+        <div class="player-cover-thumb" aria-hidden="true"></div>
+        <div class="player-texts">
+          <div class="player-title">Nada reproduciéndose</div>
+          <div class="player-artist">Haz click en una canción</div>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button class="player-toggle" aria-label="Play/Pause">
+          <span class="icon icon-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="player-progress">
+        <span class="time current-time">0:00</span>
+        <div class="progress-bar" aria-hidden="true">
+          <div class="progress-bar-inner"></div>
+        </div>
+        <span class="time total-time">0:00</span>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>

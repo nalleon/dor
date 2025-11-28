@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nabil L. A.">
+    <title>Portada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <header>
+    <nav class="navbar navbar-dark bg-dark text-light navbar-expand-lg">
+      <div class="container-fluid">
+          <p class="mt-2 me-2"><img class="ms-5" src="./img/pdc-logo.png" style="height: 30px; width: 20px;"> Canarias</p>
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="true" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div id="navBar" class="collapse navbar-collapse">
+              <ul class="d-flex align-items-start navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                <li class="list-group-item m-1"><a class="ms-3 link-underline link-underline-opacity-0 link-light" href="./index.html">Portada</a></li>
+                <li class="list-group-item m-1"><a class="ms-3 link-offset-1 link-underline link-underline-opacity-0 link-secondary" href="./deportes.html">Deportes</a></li>
+                <li class="list-group-item m-1"><a class="ms-3 link-offset-1 link-underline link-underline-opacity-0 link-secondary"  href="./rutas.html">Rutas</a></li>
+                <li class="list-group-item m-1"><a class="ms-3 link-offset-1 link-underline link-underline-opacity-0 link-secondary" href="./contacto.html">Contáctanos</a></li>
+                <li class="list-group-item m-1"><i class="ms-3 bi bi-exclamation-triangle-fill text-warning"></i></li>
+                <li class="list-group-item m-1"><i class="ms-3 bi bi-exclamation-circle-fill text-danger"></i></li>
+              </ul>
+              <form class="d-flex align-items-end me-5">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+      </div>
+    </nav>
+    <nav class="bg-light" aria-label="breadcrumb d-flex" style="--bs-breadcrumb-divider: '>'">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item m-3"><a class="link-offset-1 link-underline link-underline-opacity-0 link-secondary ms-4"  href="./index.html">Portada</a></li>
+      </ol>
+    </nav>
+  </header>
+  <body>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 col-sm-2">
+        <nav class="navbar navbar-light bg-white text-dark m-3">
+          <ul class="navbar-nav flex-lg-column flex-sm-row flex-xs-row align-items-start me-auto mb-2 mb-lg-0">
+              <li class="list-group-item m-1"><a class="link-offset-1 link-underline link-underline-opacity-0 ms-3" href="#poblacion">Población</a></li>
+              <li class="list-group-item m-1"><a class="link-offset-1 link-underline link-underline-opacity-0 ms-3" href="#gastronomia">Menú</a></li>
+              <li class="list-group-item m-1"><a class="link-offset-1 link-underline link-underline-opacity-0 ms-3" href="#precios">Precios</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-10 col-sm-12">
+        <div class="container mb-3">
+          <h2 class="fw-bold text-start text-md-left">Población por provincias</h2>
+            <div id="poblacion" class="d-flex">
+              <div class="col-lg-12 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-5 col-sm-12">
+                    <h3 class="fw-bold">Santa Cruz de Tenerife </h3>
+                    <ul class="list-group " >
+                      <li class="list-group-item disabled d-flex ">Tenerife<span class="badge bg-primary ms-auto">966.354</span></li>
+                      <li class="list-group-item disabled d-flex">La Gomera<span class="badge bg-primary ms-auto">22.426</span></li>
+                      <li class="list-group-item disabled d-flex">El Hierro<span class="badge bg-primary ms-auto">11.338</span></li>
+                      <li class="list-group-item disabled d-flex">La Palma<span class="badge bg-primary ms-auto">85.840</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 mt-3">
+                    <h3 class="fw-bold">Las Palmas de Gran Canaria</h3>
+                    <div class="btn-group-vertical w-100">
+                      <button class="btn disabled d-flex ">Gran Canaria <span class="badge bg-info ms-auto rounded-pill">870.595</span></li>
+                      <button class="btn disabled d-flex">Lanzarote<span class="badge bg-info ms-auto rounded-pill">154.530</span></li>
+                      <button class="btn disabled d-flex">Fuerteventura<span class="badge bg-info ms-auto rounded-pill">126-227</span></li>
+                      <button class="btn disabled d-flex">La Graciosa<span class="badge bg-info ms-auto rounded-pill">734</span></li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+          <div id="gastronomia">
+            <h2 class="text fw-bold">Gastronomía</h2>
+            <h3 class="text fw-bold">Menú</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="fw-bold">Primeros</h4>
+                <ul class="list-group">
+                  <li class="list-group-item disabled d-flex">Ensalada Tropical</li>
+                  <li class="list-group-item disabled d-flex">Escaldón</li>
+                  <li class="list-group-item disabled d-flex">Queso Asado</li>
+                  <li class="list-group-item disabled d-flex">Croquetas</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="fw-bold">Segundos </h4>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-action list-group-item-primary">Carne Fiesta</li>
+                  <li class="list-group-item list-group-item-action list-group-item-primary">Pollo Asado</li>
+                  <li class="list-group-item list-group-item-action list-group-item-primary">Garbanzas</li>
+                  <li class="list-group-item list-group-item-action list-group-item-primary">Potaje Berros</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="fw-bold">Postres </h4>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-action list-group-item-warning">Polvito Uruguayo</li>
+                  <li class="list-group-item list-group-item-action list-group-item-warning">Principe Alberto</li>
+                  <li class="list-group-item list-group-item-action list-group-item-warning">Frangoyo</li>
+                  <li class="list-group-item list-group-item-action list-group-item-warning">Quesillo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3">
+          <div id="precios">
+            <div id="primeros">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Primeros</th>
+                    <th scope="col">Ingredientes</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody class="table table-light">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Ensalada Tropical</td>
+                    <td>Lechuga, mango y papaya</td>
+                    <td>7€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Escaldón</td>
+                    <td>Gofio</td>
+                    <td>4€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Queso Asado</td>
+                    <td>Leche de Cabra</td>
+                    <td>5€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Croquetas</td>
+                    <td>Pollo, cherne, queso azul</td>
+                    <td>6€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="segundos">
+              <table class="table table-primary table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Segundos</th>
+                    <th scope="col">Ingredientes</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Carne Fiesta</td>
+                    <td>Cochino negro</td>
+                    <td>7.5€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Pollo asado</td>
+                    <td>Pollo de corral</td>
+                    <td>5.5€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Garbanzas</td>
+                    <td>Garbanzos, carne de cochino</td>
+                    <td>4€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Potaje de Berros</td>
+                    <td>Berros, papas, bubango</td>
+                    <td>5€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="terceros">
+              <table class="table table-warning table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Terceros</th>
+                    <th scope="col">Ingredientes</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Polvito Uruguayo</td>
+                    <td>Dulce de leche</td>
+                    <td>3.5€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Principe Alberto</td>
+                    <td>Huevo, Leche, Almendras</td>
+                    <td>3€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Frangoyo</td>
+                    <td>Huevos, Leche, Caramelo</td>
+                    <td>2.75€</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Quesillo</td>
+                    <td>Leche, Huevos, Azucar</td>
+                    <td>3€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
